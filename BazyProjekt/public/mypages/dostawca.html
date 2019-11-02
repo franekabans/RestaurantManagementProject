@@ -1,0 +1,140 @@
+<DOCTYPE html>
+
+<html lang="pl">
+
+
+<head>
+
+	<meta charset="UTF-8" />
+	
+
+	<title> D n D </title>
+
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+</head>
+
+
+<body>
+	<div id = "container">
+		
+
+
+		<div id = "header">
+			<h1> Dostawcy i ich Dostawy </h1>
+		</div>
+
+
+		<div id = "main">
+
+			<div>
+			<a id ="wroc" href = "../index.html"> Wróć do strony głównej</a>
+			</div>
+
+			<img src = "../images/restaurant.png" width=200/>
+			
+
+			<div>
+			<hr>
+			Wyszukaj wszystkie Dostawy
+			</hr>
+			<form action="/dostawca" method = "GET">
+			<button>Wyszukaj</button>
+			</form>
+			</div>
+
+
+			<div id = "wyszukaj_po_id">
+			<hr>
+			Wyszukaj Dostawców po ID :	
+			</hr>
+		
+			<form action="/dostawcaid/" method = "GET">
+			<input placeholder="Szukaj Podaj ID" name = "idk" >
+			<button>Wyszukaj po ID</button>
+		
+			</form>
+			</div>
+
+			<div id = "wyszukaj_po_id">
+			<hr>
+			Wyszukaj Zrealizowane Dostawy po ID Dostawcy :	
+			</hr>
+		
+			<form action="/dostawa/" method = "GET">
+			<input type="number" min="1" placeholder="Podaj ID Dostawcy" name = "idk" >
+			<button>Wyszukaj po ID</button>
+		
+			</form>
+			</div>
+			
+
+			<div id = "nowy">
+				<hr>
+			Chcesz dodac nowego dostawce?
+				</hr>
+			<form action="/createdostawca/" method = "POST">
+		
+
+				<input type = "number" min="1" placeholder="Podaj ID Dostawcy" name = "id_pos" >
+			
+				<input type = "text"  placeholder="Podaj imie Dostawcy" name = "imie_pos">
+		
+				
+				<button>Dodaj Dostawce!</button>
+			
+			</form>
+				</div>
+
+					<div id = "nowadostawa">
+				<hr>
+			Chcesz dodac nową dostawę? (Czas dostawy podaj w formacie R-M-D G:M:S)
+				</hr>
+			<form action="/createdostawa/" method = "POST">
+		
+
+				<input type = "number" min="1" placeholder="Podaj ID Dostawcy" name = "id_pos" >
+			
+				<input type = "number" min="1" placeholder="Podaj ID klienta" name = "imie_pos">
+
+				<input type = "text"  placeholder="Podaj czas realizacji zamówienia" name = "czas_pos">
+		
+				
+				<button>Dodaj Dostawę!</button>
+			
+			</form>
+				</div>
+			
+
+
+			
+			<div id= "deletedostawa">
+<hr>
+Chcesz usunąć Dostawę?
+</hr>
+<form action = "/deletedostawca/" method ="POST" >
+<input type = "number" min="1" placeholder="Podaj ID Dostawcy" name="idposilkii">
+
+<button>usuń!</button>
+</form>
+
+
+
+</div>
+
+
+
+		<div id = "src">
+
+			Copyright &copy 2019 Franek Kramarczyk
+
+		</div>
+
+
+	</div>
+	</div>
+
+
+</body>
+
+
+</html>

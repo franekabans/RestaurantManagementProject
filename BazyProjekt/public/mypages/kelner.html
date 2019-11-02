@@ -1,0 +1,117 @@
+<DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+
+	<meta charset="UTF-8" />
+	
+
+	<title> Kelnerzy </title>
+
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+</head>
+
+
+<body>
+	<div id = "container">
+		
+
+
+		<div id = "header">
+			<h1> Kelnerzy Zatrudnieni w Restauracji  </h1>
+		</div>
+
+
+		<div id = "main">
+
+			<div>
+			<a id ="wroc" href = "../index.html"> Wróć do strony głównej</a>
+			</div>
+
+			<img src = "../images/restaurant.png" width=200/>
+			
+
+			<div>
+			<hr>
+			Wyszukaj wszystkich Kelnerów
+			</hr>
+			<form action="/kelner" method = "GET">
+			<button>Wyszukaj</button>
+			</form>
+			</div>
+
+
+			<div id = "wyszukaj_po_id">
+			<hr>
+			Wyszukaj Kelnera po Imieniu :	
+			</hr>
+		
+			<form action="/kelnerid/" method = "GET">
+			<input placeholder="Szukaj (Podaj imię)" name = "idk" >
+			<button>Wyszukaj po Imieniu</button>
+		
+			</form>
+			</div>
+			
+
+			<div id = "nowy">
+				<hr>
+			Chcesz zatrudnić Kelnera?
+				</hr>
+			<form action="/createkelner/" method = "POST">
+		
+
+				<input type = "number" min="1" placeholder="Podaj ID" name="idpos">
+				<input type = "text" placeholder = "Podaj imie Kelnera" name="imiepos">
+				
+				
+				<button>Dodaj Kelnera!</button>
+			
+			</form>
+				</div>
+			<div = "apdejt">
+			<hr>
+				Chcesz uaktualnić dane o Kelnerze?
+				</hr>
+			<form action = "/putkelner/" method = "POST">
+					<input type = "number" min="1" placeholder="Podaj ID" name="idpos">
+				<input type = "text" placeholder = "Podaj imie Kelnera" name="imiepos">
+				
+			<button>uaktualnij!</button>
+				</form>
+
+
+
+			</div>
+			<div = "delete">
+<hr>
+Chcesz zwolnić kelnera?
+</hr>
+<form action = "/deletekelner/" method ="POST" >
+<input type = "number" min="1" placeholder="Podaj ID" name="idposilkii">
+
+<button>usuń!</button>
+</form>
+
+
+
+</div>
+
+
+
+		<div id = "src">
+
+			Copyright &copy 2019 Franek Kramarczyk
+
+		</div>
+
+
+	</div>
+	</div>
+
+
+</body>
+
+
+</html>

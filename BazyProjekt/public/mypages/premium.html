@@ -1,0 +1,103 @@
+<DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<title>Premium </title>
+
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+</head>
+
+
+<body>
+	<div id = "container">
+		
+
+
+		<div id = "header">
+			<h1>Klienci z Statusem Premium</h1>
+		</div>
+
+
+		<div id = "main">
+
+			<div>
+			<a id ="wroc" href = "../index.html"> Wróć do strony głownej</a>
+			</div>
+
+			<img src = "../images/restaurant.png" width=200/>
+			
+
+			<div>
+			<hr>
+			Wyszukaj wszystkich Klientów Premium
+			</hr>
+			<form action="/premium" method = "GET">
+			<button>Wyszukaj</button>
+			</form>
+			</div>
+
+
+			<div id = "wyszukaj_po_id">
+			<hr>
+			Wyszukaj Klienta premium po jego ID :	
+			</hr>
+		
+			<form action="/premiumid/" method = "GET">
+			<input placeholder="Szukaj (Podaj ID)" name = "idk" >
+			<button>Wyszukaj po ID</button>
+		
+			</form>
+			</div>
+			
+
+			<div id = "nowy">
+				<hr>
+			Chcesz dodac nowego Klienta do Listy Premium?
+				</hr>
+			<form action="/createpremium/" method = "POST">
+		
+
+				<input type = "text" placeholder="Podaj ID " name = "id_kuc" >
+			
+				<input type = "text"  placeholder="Podaj zniżkę jaką otrzyma " name = "imie_kuc">
+				
+				<button>Dodaj !</button>
+			
+			</form>
+				</div>
+			
+			<div = "delete">
+<hr>
+Chcesz usunąć Klienta z listy premium?
+</hr>
+<form action = "/deletepremium/" method ="POST" >
+<input type = "number" min="1" placeholder="Podaj ID" name="idkucc">
+
+<button>usuń!</button>
+</form>
+
+
+
+</div>
+
+
+
+		<div id = "src">
+
+			Copyright &copy 2019 Franek Kramarczyk
+
+		</div>
+
+
+	</div>
+	</div>
+
+
+</body>
+
+
+</html>

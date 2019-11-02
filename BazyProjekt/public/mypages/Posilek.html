@@ -1,0 +1,135 @@
+<DOCTYPE html>
+	
+<html lang="pl">
+
+
+<head>
+
+	<meta charset="UTF-8" />
+	
+
+	<title> Menu </title>
+
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+</head>
+
+
+<body>
+	<div id = "container">
+		
+
+
+		<div id = "header">
+			<h1> Menu  </h1>
+		</div>
+
+
+		<div id = "main">
+
+			<div>
+			<a id ="wroc" href = "../index.html">Wróć do strony głównej</a>
+			</div>
+
+			<img src = "../images/restaurant.png" width=200/>
+			
+
+			<div>
+			<hr>
+			Wyszukaj wszystkie dania które można zamówić
+			</hr>
+			<form action="/posilki" method = "GET">
+			<button>Wyszukaj</button>
+			</form>
+			</div>
+
+
+			<div id = "wyszukaj_po_id">
+			<hr>
+			Wyszukaj Dania po ID :	
+			</hr>
+		
+			<form action="/posilkiid/" method = "GET">
+			<input placeholder="Szukaj (Podaj ID)" name = "idk" >
+			<button>Wyszukaj po ID</button>
+		
+			</form>
+			</div>
+			
+
+			<div id = "nowy">
+				<hr>
+			Chcesz dodac nowe danie do Menu?
+				</hr>
+			<form action="/createposilki" method = "POST">
+		
+
+				<input type = "text" placeholder="Podaj ID Dania" name = "id_pos" >
+			
+				<input type = "text"  placeholder="Podaj nazwe Dania " name = "imie_pos">
+			
+				<input type = "text"  placeholder="Cene dania" name = "pensja_pos">
+				
+				<button>Dodaj Danie!</button>
+			
+			</form>
+				</div>
+			<div id = "apdejt">
+			<hr>
+				Chcesz uaktualnić dane ,o którymś Daniu?
+				</hr>
+			<form action = "/putposilki/" method = "POST">
+					<input type = "number" min="1" placeholder="Podaj ID" name="idpos">
+				<input type = "text" placeholder = "Podaj aktualną nazwę" name="imiepos">
+				<input type = "text" placeholder = "Podaj nową cenę" name="pensjapos">
+			<button>uaktualnij!</button>
+				</form>
+
+
+
+			</div>
+			<div id= "delete">
+<hr>
+Chcesz usunąć Danie?
+</hr>
+<form action = "/deleteposilki/" method ="POST" >
+<input type = "number" min="1" placeholder="Podaj ID" name="idposilkii">
+
+<button>usuń!</button>
+</form>
+
+
+
+</div>
+
+
+			<div id= "delete">
+<hr>
+Chcesz zobaczyć jakie posiłki zawierają się w Zamówieniach?
+</hr>
+<form action = "/posilkiwzamowieniach/" method ="GET" >
+
+<button>Posilki a Zamówienia</button>
+</form>
+
+
+
+</div>
+
+
+
+
+		<div id = "src">
+
+			Copyright &copy 2019 Franek Kramarczyk
+
+		</div>
+
+
+	</div>
+	</div>
+
+
+</body>
+
+
+</html>

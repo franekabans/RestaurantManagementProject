@@ -1,0 +1,119 @@
+
+<DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<title> Klient</title>
+
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+</head>
+
+
+<body>
+	<div id = "container">
+		
+
+
+		<div id = "header">
+			<h1> Klienci naszej Restauracji </h1>
+		</div>
+
+
+		<div id = "main">
+
+			<div>
+			<a id ="wroc" href = "../index.html"> Wróć do strony głównej</a>
+			</div>
+
+			<img src = "../images/restaurant.png" width=200/>
+			
+
+			<div>
+			<hr>
+			Wyszukaj wszystkich klientów
+			</hr>
+			<form action="/klient" method = "GET">
+			<button>Wyszukaj</button>
+			</form>
+			</div>
+
+
+			<div id = "wyszukaj_po_id">
+			<hr>
+			Wyszukaj Klienta po jego ID :	
+			</hr>
+		
+			<form action="/klientid/" method = "GET">
+			<input type="number" min="1" placeholder="Szukaj (Podaj ID)" name = "idk" >
+			<button>Wyszukaj po ID</button>
+		
+			</form>
+			</div>
+			
+
+			<div id = "nowy">
+				<hr>
+			Chcesz dodac nowego Klienta?
+				</hr>
+			<form action="/createklient/" method = "POST">
+		
+
+				<input type = "number" min ="1" placeholder="Podaj ID Klienta" name = "id_kli" >
+			
+				<input type = "number" min ="1" placeholder="ilość zamówień klienta" name = "ilosc_kli">
+			
+				<input type = "text"  placeholder="Podaj adres dostawy " name = "adres_kli">
+
+				<input type = "text"  placeholder="Podaj telefon kontaktowy" name = "tel_kli">
+
+				<input type = "text"  placeholder="Podaj imie Klienta" name = "imie_kli">
+
+				<input type = "text"  placeholder="Podaj nazwisko Klienta" name = "nazwisko_kli">
+
+				<input type = "text"  placeholder=" Sposób płatności" name = "pensja_kli">
+				
+				<button>Dodaj Klienta!</button>
+			
+			</form>
+				</div>
+			<div>
+<hr>
+Dodaj zamowienie jakie złożył Klient aby podczas dostawy było jasne jakie zamówienie realizujemy.
+</hr>
+<form action = "/createzamkli/" method = "POST">
+<input type = "number" min="1" placeholder = "Podaj ID Klienta" name = "id_kuc">
+<input type = "number" min="1" placeholder = "Podaj ID Zamówienia" name = "imie_kuc">
+<button>DODAJ!</button>
+</form>
+
+</br>
+
+<hr>
+Pokaż wszystkich Klientów wraz z zamówieniami
+</hr>
+<form action= "/zamkli"  method = "GET">
+<button>POKAŻ!</button>
+</form>
+
+</div>
+
+
+		<div id = "src">
+
+			Copyright &copy 2019 Franek Kramarczyk
+
+		</div>
+
+
+	</div>
+	</div>
+
+
+</body>
+
+
+</html>

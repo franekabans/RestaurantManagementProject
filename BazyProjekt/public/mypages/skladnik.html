@@ -1,0 +1,102 @@
+<DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<title> Składniki potraw </title>
+
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+</head>
+
+
+<body>
+	<div id = "container">
+		
+
+
+		<div id = "header">
+			<h1> Składniki potraw naszej Restauracji </h1>
+		</div>
+
+
+		<div id = "main">
+
+			<div>
+			<a id ="wroc" href = "../index.html"> Wróć do strony głównej</a>
+			</div>
+
+			<img src = "../images/restaurant.png" width=200/>
+			
+
+			<div>
+			<hr>
+			Wyszukaj wszystkie dostępne składniki
+			</hr>
+			<form action="/skladnik" method = "GET">
+			<button>Wyszukaj</button>
+			</form>
+			</div>
+
+
+			<div id = "wyszukaj_po_id">
+			<hr>
+			Wyszukaj składnik po jego nazwie :	
+			</hr>
+		
+			<form action="/skladnikid/" method = "GET">
+			<input type="text" placeholder="Podaj nazwę produktu" name = "idk" >
+			<button>Wyszukaj po nazwie</button>
+		
+			</form>
+			</div>
+			
+
+			<div id = "nowy">
+				<hr>
+			Chcesz dodac nowy składnik?
+				</hr>
+			<form action="/createskladnik/" method = "POST">
+		
+
+				<input type = "text" placeholder="Podaj nazwę produktu" name = "id_kuc" >
+			
+				<input type = "text"  placeholder="Podaj opis  " max="29" name = "imie_kuc">
+				<button>Dodaj nowy Składnik do magazynu!</button>
+			
+			</form>
+				</div>
+
+			<div = "delete">
+<hr>
+Chcesz usunąć Składnik?
+</hr>
+<form action = "/deleteskladnik/" method ="POST" >
+<input type = "text" max="30" placeholder="Podaj nazwę" name="idkucc">
+
+<button>usuń!</button>
+</form>
+
+
+
+</div>
+
+
+
+		<div id = "src">
+
+			Copyright &copy 2019 Franek Kramarczyk
+
+		</div>
+
+
+	</div>
+	</div>
+
+
+</body>
+
+
+</html>

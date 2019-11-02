@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #ffffcc;
+	font-family: 'Lato', sans-serif;
+
+}
+
+a{
+	color: red;
+}
+
+
+#container{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:; 10px;
+
+}
+#menu{
+	text-align: center;
+	background-color: #ffD500;
+}
+
+#header{
+
+	background-color: #FFD700;
+	text-align: center;
+}
+
+#main{
+	font-size: 30px;
+	text-align: center;
+}
+
+
+#nowy {
+	font-size: 30px;
+	color: blue;
+
+}
+
+#wyszukaj {
+	font-size: 30px;
+	color: blue;
+}
+#src{
+	text-align: center;
+	background-color: #ccD500;
+
+}
+
+

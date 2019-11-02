@@ -1,0 +1,105 @@
+<DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<title> Zamówienia </title>
+
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+</head>
+
+
+<body>
+	<div id = "container">
+		
+
+
+		<div id = "header">
+			<h1>Zrealizowane Zamówienia w naszej Restauracji </h1>
+		</div>
+
+
+		<div id = "main">
+
+			<div>
+			<a id ="wroc" href = "../index.html"> Wróć do strony głównej</a>
+			</div>
+
+			<img src = "../images/restaurant.png" width=200/>
+			
+			<div id = "wyszukaj_po_id">
+			<hr>
+			Wyszukaj Zamówienie po  ID :	
+			</hr>
+		
+			<form action="/zamowienieid/" method = "GET">
+			<input placeholder="Szukaj (Podaj ID)" name = "idk" >
+			<button>Wyszukaj po ID</button>
+		
+			</form>
+			</div>
+			
+
+			<div id = "nowy">
+				<hr>
+			Chcesz dodac Zamówienie? (Czas zamówienia podaj w formacie R-M-D G:M:S)
+				</hr>
+			<form action="/createzamowienie/" method = "POST">
+		
+
+				<input type = "text" placeholder="Podaj ID Zamówienia" name = "id_kuc" >
+			
+				<input type = "text"  placeholder="Podaj date i czas" name = "imie_kuc">
+			
+				<input type = "text"  placeholder="Podaj kwotę należności" name = "pensja_kuc">
+				
+				<button>Dodaj!</button>
+			
+			</form>
+				</div>
+
+			<div id = "nowy">
+				<hr>
+			Chcesz dodac Posiłek do Zamowienia?
+			<a href="Posilek.html">Strona z Posiłkami </a>
+				</hr>
+			<form action="/createposilkizamowienie/" method = "POST">
+		
+
+				<input type = "number" min="1" placeholder="Podaj ID Zamówienia" name = "id_kuc" >
+			
+				<input type = "number" min="1"  placeholder="Podaj ID posiłku" name = "imie_kuc">
+			
+				<input type = "number" min="1"  placeholder="Podaj ilosc posiłków" name = "pensja_kuc">
+				
+				<button>Dodaj!</button>
+			
+			</form>
+				</div>
+			
+<div>
+			</br>
+ 		<form action="/calkiemprzyjemnyzarobek" method="GET">
+ 			<button> wszystkie zamowienia powyżej 50zł</button>
+ 		</form>
+
+</div>
+
+		<div id = "src">
+
+			Copyright &copy 2019 Franek Kramarczyk
+
+		</div>
+
+
+	</div>
+	</div>
+
+
+</body>
+
+
+</html>
